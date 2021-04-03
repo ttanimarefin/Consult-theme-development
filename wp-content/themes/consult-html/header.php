@@ -27,7 +27,7 @@
     
 </head>
 <body>
-    <!--Start Preloader-->
+
     <!-- <div class="preloader">
         <div class="preloader-inner-area">
             <div class="loader-overlay">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>  -->
-    <!--End Preloader-->
+    
 
     <header id="header" class="header_areaa">
         <nav class="navbar extended">
@@ -82,4 +82,4 @@
             </div>
         </nav>
         
-    </header><!-- /header -->
+    </header>

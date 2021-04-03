@@ -213,7 +213,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="looking_for_right image_fulwidth wow fadeInRight" data-wow-delay="300ms">
-                        <img src="images/we_are_alwayes.jpg" alt="images">
+                        <img src="<?php echo get_template_directory_uri();?>/images/we_are_alwayes.jpg" alt="images">
                     </div>
                 </div>
             </div><!--row -->

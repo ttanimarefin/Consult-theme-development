@@ -43,13 +43,17 @@
         <nav class="navbar extended">
             <div class="nav-wrapper dark-wrapper inverse-text">
                 <div class="container flex-it">
+
+                 <?php wp_nav_menu(array(
+                     'theme_location'=>'custom-menu-class',
+                 )  );?>
                     <div class="navbar-collapse collapse align-left">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="index.php">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
 
-                            <li><a href="about-us-page.php">About</a></li>
+                            <li><a href="about-us-page.html">About</a></li>
 
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown-menu">
@@ -71,6 +75,9 @@
                             <li><a href="contact-page.html">Contacts  </a></li>        
                         </ul>
                     </div>
+
+
+
                     <div class="navbar-other">
                         <div class="align-right text-right">
                             <div class="navbar-brand">

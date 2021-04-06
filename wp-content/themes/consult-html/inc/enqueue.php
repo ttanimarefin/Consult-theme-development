@@ -31,7 +31,7 @@ function consult_cs_js(){
   wp_enqueue_script('modernizr',get_template_directory_uri().'/assets/js/modernizr.js',array('jquery'),'1.0.0',true);
   wp_enqueue_script('waypoint',get_template_directory_uri().'/assets/js/waypoints.min.js',array('jquery'),'1.0.0',true);
   wp_enqueue_script('bootstrap-js',get_template_directory_uri().'/assets/js/bootstrap.min.js',array('jquery'),'1.0.0',true);
-  wp_enqueue_script('plugins-js',get_template_directory_uri().'assets/js/plugins.js',array('jquery'),'1.0.0',true);
+  wp_enqueue_script('plugins-js',get_template_directory_uri().'/assets/js/plugins.js',array('jquery'),'1.0.0',true);
   wp_enqueue_script('scrollup-js',get_template_directory_uri().'/assets/js/jquery.scrollUp.min.js',array('jquery'),'1.0.0',true);
   wp_enqueue_script('gmaps-api','https://maps.googleapis.com/maps/api/js?key=AIzaSyB4RM7zOgOKq6n2fv407hX28xiL-M6vLdY');
   wp_enqueue_script('gmaps',get_template_directory_uri().'/assets/js/gmaps.js',array('jquery'),'1.0.0',false);

@@ -46,10 +46,10 @@
                     <div class="navbar-collapse collapse align-left">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="index-01.html">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
 
-                            <li><a href="about-us-page.html">About</a></li>
+                            <li><a href="about-us-page.php">About</a></li>
 
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
                     <div class="navbar-other">
                         <div class="align-right text-right">
                             <div class="navbar-brand">
-								<a href="index-01.html"><img alt="images" src="<?php echo get_template_directory_uri();?>/images/logo_consult.png"></a>
+								<a href="index.html"><img alt="images" src="<?php echo get_template_directory_uri();?>/images/logo_consult.png"></a>
 							</div>
                         </div>
                     </div>

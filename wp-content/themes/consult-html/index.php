@@ -57,12 +57,17 @@
                         <div class="blog_pagination">
                             <nav>
                                 <ul class="pagination pagination-lg">
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
 
-                                    <li class="page-item">
-                                        <a class="page-link" href="#"><i class="flaticon-right-arrow"></i></a>
-                                    </li>
+                                <?php
+                                
+                                
+                                the_posts_pagination( array(
+                                    'mid_size'  => 2,
+                                    'prev_text' => __( '', 'textdomain' ),
+                                    'next_text' => __( '<i class="flaticon-right-arrow"></i>', 'textdomain' ),
+                                ) );
+                                ?>
+
                                 </ul>
                             </nav>
                         </div>

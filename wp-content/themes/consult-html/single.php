@@ -1,71 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- meta data -->
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- title of site -->
-    <title>Home page</title>
-
-    <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700,800%7CMontserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-   
-    <!--flaticon.css-->
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-
-    <!--font-awesome.min.css-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-    <!--text-animation.css-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--animate.css-->
-    <link rel="stylesheet" href="assets/css/text-animation.css">
-    
-    <!--fancybox.min.css-->
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-    
-    <!--fancybox.min.css-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    
-    <!--owl.carousel.min.css-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    
-    <!--slider revolution css -->
-    <link rel="stylesheet" href="rs-plugin/css/layers.css" type="text/css"/>
-    <link rel="stylesheet" href="rs-plugin/css/settings.css" type="text/css"/>
-    
-    <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--plugins.css-->
-    <link href="assets/css/plugins.css" rel="stylesheet">
-
-    <!--icons.css-->
-    <link href="assets/css/icons.css" rel="stylesheet">
-    
-    <!--menu-css.css-->
-    <link href="assets/css/menu-css.css" rel="stylesheet">
-
-    <!--style.css-->
-    <link rel="stylesheet" href="assets/css/main.css">
-    
-    <!--responsive.css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->   
-</head>
+<?php get_header(  );?>
 <body>
     <!--Start Preloader-->
     <div class="preloader">
@@ -79,45 +12,7 @@
     </div> 
     <!--End Preloader-->
 
-    <header id="header" class="header_areaa">
-        <nav class="navbar extended">
-            <div class="nav-wrapper dark-wrapper inverse-text">
-                <div class="container flex-it">
-                    <div class="navbar-collapse collapse align-left">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="index-01.html">Home</a>
-                            </li>
-
-                            <li><a href="about-us-page.html">About</a></li>
-
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="page-404.html">404</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="portfolio-two-column.html">Portfolio</a></li>
-                            <li><a href="#">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="blog-sidebar-page.html">Blog Sidebar Page</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact-page.html">Contacts  </a></li>        
-                        </ul>
-                    </div>
-                    <div class="navbar-other">
-                        <div class="align-right text-right">
-                            <div class="navbar-brand">
-								<a href="index-01.html"><img alt="images" src="images/logo_consult.png"></a>
-							</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header><!-- /header -->
+    
 
     
     <div class="page_title_banner banner_blog_single_title_bg">
@@ -139,33 +34,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="blog_left_side_area">
+
+
+                <?php 
+                       if (have_posts()):
+                        while (have_posts()):the_post();
+                    ?>
+                                         <div class="blog_left_side_area">
                         <div class="blog_pic image_fulwidth">
-                            <img src="images/blog_sidebar_area_img_02.jpg" alt="images">
-                            <h4 class="date_position">25 JUNE 2017</h4>
+                            <img src="<?php the_post_thumbnail() ?>" alt="images">
+                            <h4 class="date_position"><?php echo get_the_date('F j Y');?></h4>
                         </div>
 
                         <div class="blog_left_single_content blog_single_content para_default">
-                            <h3>Make your productive teams</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra ligula vitae mattis commodo. Phasellus consequat ipsum id mauris viverra, ac pulvinar dui fringilla. Ut suscipit ac turpis vitae accumsan. Fusce risus est, sagittis in lectus id, Nunc quis rutrum lorem. Suspendisse potenti. Maecenas felis odio.tempor iaculis elit. Nullam at malesuada tellus. Praesent id ornare lorem. Cras et dolor vel lacus cursus porttitor sed vel magna. Nunc quis rutrum lorem. Suspendisse potenti. Maecenas felis.</p>
-
-                            <p>ipsum id mauris viverra, ac pulvinar dui fringilla. Ut suscipit ac turpis vitae accumsan. Fusce risus est, sagittis in lectus id, Nunc quis rutrum lorem. Suspendisse potenti. Maecenas felis odio.tempor iaculis elit. Nullam at malesuada tellus. Praesent id ornare lorem. Cras et dolor vel lacus cursus porttitor sed vel magna.
-                            </p>
-
-                            <blockquote class="blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere.</p>
-                                <footer class="blockquote-footer">Thomas Antony</footer>
-                            </blockquote>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna et sed aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h3><?php echo get_the_title(  );?></h3>
+                            <p><?php echo the_content( );?></p>
 
                         </div>
 
                         <div class="blog_tag">
-                            <a href="#">Business</a>
-                            <a href="#">Financial</a>
-                            <a href="#">Investment</a>
-                            <a href="#">Consult</a>
+                        <?php the_tags( 'Tags: ', ', ', '<br />' ); ?>
                         </div>
 
                         <div class="share_blog_single_in_social">
@@ -221,7 +109,13 @@
                             </div>
                         </div>
                     </div><!-- blog_left_side_area -->
-                </div><!-- col-md-8 -->
+                </div>
+                 <?php
+                    endwhile;
+                    endif;
+                    wp_reset_postdata()
+                 ?>
+                   <!-- col-md-8 -->
 
                 <div class="col-md-4">
                     <div class="blog_right_side_area">
@@ -431,77 +325,6 @@
                 </div>
             </div>
         </div>
-        <div class="footer_bottom text-center">
-            <div class="container">
-                <p>© Copyright 2017 <span>|</span> Consult by <a href="#">HelloXpart</a> <span>|</span> All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-
-    <!--jquery.min.js-->
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script> 
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-    <!--modernizr and waypoints -->
-    <script src="assets/js/modernizr.js" type="text/javascript"></script> 
-    <script src="assets/js/waypoints.min.js" type="text/javascript"></script> 
-
-    <!--bootstrap js-->
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <!--plugins js-->
-    <script src="assets/js/plugins.js" type="text/javascript"></script> 
-
-    <!--scrollup js-->
-    <script src="assets/js/jquery.scrollUp.min.js" type="text/javascript"></script> 
-
-    <!--gmaps-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4RM7zOgOKq6n2fv407hX28xiL-M6vLdY"></script> 
-    <script src="assets/js/gmaps.js" type="text/javascript"></script> 
-
-    <!--jquery.fancybox.min.js-->
-    <script src="assets/js/jquery.fancybox.min.js" type="text/javascript"></script>
-
-    <!--jquery.magnific-popup.min.js-->
-    <script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-
-    <!--isotope.pkgd.min.js-->
-    <script src="assets/js/isotope.pkgd.min.js" type="text/javascript"></script> 
-
-    <!--jquery counterup-->
-    <script src="assets/js/counterup.min.js" type="text/javascript"></script> 
-
-    <!--owl.carousel.min.js-->
-    <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script> 
-
-    <!--wow.min.js-->
-    <script src="assets/js/wow.min.js" type="text/javascript"></script>
-
-    <!--jquery.lettering.js-->
-    <script src="assets/js/jquery.lettering.js" type="text/javascript"></script>
-
-    <!--jquery.textillate.js-->
-    <script src="assets/js/jquery.textillate.js" type="text/javascript"></script> 
-
-    <!--mixitup.js-->
-    <script src="assets/js/mixitup.js" type="text/javascript"></script> 
-
-    <!--slider revolution scripts -->
-    <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script> 
-
-    <!-- slider revolution 5.0 extensions  -->
-    <script src="rs-plugin/js/extensions/revolution.extension.actions.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.migration.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script> 
-    <script src="rs-plugin/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script> 
-
-    <!-- custom.js-->
-    <script src="assets/js/custom.js" type="text/javascript"></script>
+        <?php get_footer(  );?>
 </body>
 </html>

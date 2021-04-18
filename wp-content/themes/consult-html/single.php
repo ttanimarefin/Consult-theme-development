@@ -59,7 +59,8 @@
                         <div class="share_blog_single_in_social">
                             <h4>
                                 <span>Share</span> 
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank">
+<i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-google-plus"></i></a>
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -68,11 +69,11 @@
 						
 			             <div class="content_blog_a fix">
 							<div class="e_blog_A">
-								 <img src="images/we_are_alwayes.jpg" alt="a_text_pic">
+								 <?php echo get_avatar(get_the_author_meta( 'ID' ), 100);?>
 							</div>
 							<div class="blog_a_text">
-								<h5><a href="#">Tomas Anderson</a></h5>
-								<p>Lorem ipsum dolor sit amet, lacus eu erat integer bibendum rutrum, sed arcu molestie, in quis ornare, rhoncus scelerisque velit, nam</p>
+								<h5><a href="<?php echo get_author_posts_url(get_the_author_meta('ID'),get_the_author_meta('user_nicename'));?>"><?php the_author();?></a></h5>
+								<p><?php echo the_author_meta( 'description' );?></p>
 							</div>
 						</div>
 
@@ -149,38 +150,38 @@
                                 <h3 class="blog_widget_title">Project</h3>
                                 <div class="project_div clearfix">
                                     <figure class="image">
-                                        <a href="images/blog_project_item_01.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_01.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_01.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_01.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_02.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_02.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_02.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_02.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_03.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_03.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_03.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_03.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_04.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_04.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_04.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_04.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_05.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_05.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_05.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_05.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_06.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_06.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_06.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_06.jpg" alt="images">
                                         </a>
                                     </figure>
                                 </div>
@@ -225,106 +226,7 @@
         </div><!-- container -->
     </div><!-- blog_page_area -->
 
-    <footer class="footer_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer_widget">
-                        <h4 class="widget_title">Our Headquarters</h4>
-                        <div class="footer_widget_content para_default">
-                            <ul class="contact_info">
-                                <li><span class="icon flaticon-phone-call"></span> +088 212 386 5575</li>
-                                <li><span class="icon flaticon-contact"></span> helloxpart@gmail.com</li>
-                                <li><span class="icon flaticon-placeholder-outline"></span> 1010 Avenue Of The MoonNew York, NY 10018 US.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer_widget">
-                        <h4 class="widget_title">Company</h4>
-                        <div class="footer_widget_content para_default">
-                            <ul>
-                                <li>
-                                    <a href="#">Consultancy Profile</a>
-                                </li>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Team Member</a>
-                                </li>
-                                <li>
-                                    <a href="#">Latest News</a>
-                                </li>
-                                <li>
-                                    <a href="#">FAQ's</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer_widget">
-                        <h4 class="widget_title">Useful Links</h4>
-                        <div class="footer_widget_content para_default">
-                            <ul>
-                                <li>
-                                    <a href="#">Create Account</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our process</a>
-                                </li>
-                                <li>
-                                    <a href="#">People</a>
-                                </li>
-                                <li>
-                                    <a href="#">Company Profilile</a>
-                                </li>
-                                <li>
-                                    <a href="#">Client</a>
-                                </li>
-                                <li>
-                                    <a href="#">Help Desk</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer_widget">
-                        <h4 class="widget_title">Newsletter</h4>
-                        <div class="footer_widget_content para_default">
-                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod temporia incididunt ut labore ete.</p>
-                            <div class="Newsletter_mail_search">
-                                <form action="#" method="post">
-                                    <div class="icon-addon addon-md">
-                                        <i class="fa fa-paper-plane"></i> <input class="form-control" id="email" placeholder="Email Address" type="text">
-                                    </div>
-                                </form>
-                            </div>
-                            <ul class="footer_social_icon">
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
         <?php get_footer(  );?>
 </body>
 </html>

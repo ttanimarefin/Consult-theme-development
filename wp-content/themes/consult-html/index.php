@@ -120,38 +120,38 @@
                                 <h3 class="blog_widget_title">Project</h3>
                                 <div class="project_div clearfix">
                                     <figure class="image">
-                                        <a href="images/blog_project_item_01.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_01.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_01.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_01.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_02.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_02.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_02.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_02.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_03.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_03.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_03.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_03.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_04.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_04.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_04.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_04.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_05.jpg" data-fancybox="gallery">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_05.jpg" data-fancybox="gallery">
                                             <img src="images/blog_project_item_05.jpg" alt="images">
                                         </a>
                                     </figure>
 
                                     <figure class="image">
-                                        <a href="images/blog_project_item_06.jpg" data-fancybox="gallery">
-                                            <img src="images/blog_project_item_06.jpg" alt="images">
+                                        <a href="<?php echo get_template_directory_uri();?>/images/blog_project_item_06.jpg" data-fancybox="gallery">
+                                            <img src="<?php echo get_template_directory_uri();?>/images/blog_project_item_06.jpg" alt="images">
                                         </a>
                                     </figure>
                                 </div>

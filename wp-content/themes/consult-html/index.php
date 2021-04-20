@@ -88,7 +88,7 @@
 				
                 <div class="col-md-4">
                     <div class="blog_right_side_area">
-					
+					   <?php echo dynamic_sidebar( 'sidebar-1' );?>
                         <div class="blog_right_widget">
                             <div class="blog_widget">
                                 <form action="#" method="post" class="blog_search">

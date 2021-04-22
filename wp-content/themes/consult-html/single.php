@@ -1,7 +1,7 @@
 <?php get_header(  );?>
 <body>
     <!--Start Preloader-->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="preloader-inner-area">
             <div class="loader-overlay">
                 <div class="l-preloader">
@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>  -->
     <!--End Preloader-->
 
     
@@ -77,13 +77,21 @@
 							</div>
 						</div>
 
+
+                        // If comments are open or we have at least one comment, load up the comment template.
+                       <?php // If comments are open or there is at least one comment, load up the comment template.
+	if ( comments_open() || get_comments_number() ) {
+		comments_template();
+	}
+                    
+                        ?>
                         <div class="consultency_comments_form">
                             <h2 class="comments_title">Leave a Reply</h2>
                             <div class="row">
-                                <form action="#" method="post">
+                                <form action="#"  method="post" class="abc">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="E-mail*">
+                                            <input type="email" class="form-control email" placeholder="E-mail*">
                                         </div>
                                     </div>
 
@@ -100,7 +108,7 @@
                                     </div>
 
                                     <div class="col-md-12">
-                                        <div class="form-group">
+                                        <div class="form-group  ab">
                                             <div class="send_me_ph">
                                                 <a class="submit_btn_quick_contact" href="#">Submit Now</a>
                                             </div>
@@ -111,6 +119,7 @@
                         </div>
                     </div><!-- blog_left_side_area -->
                 </div>
+                
                  <?php
                     endwhile;
                     endif;

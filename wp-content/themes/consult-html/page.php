@@ -10,6 +10,7 @@ get_template_part( 'template-parts/page/content','page' );
     endwhile;
 
 
+// If comments are open or we have at least one comment, load up the comment template.
 
 
 ?>

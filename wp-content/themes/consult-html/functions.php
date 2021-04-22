@@ -5,6 +5,7 @@ require_once(get_template_directory().'/inc/theme-setup.php');
 require_once(get_template_directory().'/inc/nav-walker.php');
 require_once(get_template_directory().'/inc/custom-widgets.php');
 
+
 // Latest Jquery disable and enable theme Jquery
 add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {

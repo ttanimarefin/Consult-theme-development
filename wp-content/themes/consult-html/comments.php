@@ -62,7 +62,8 @@ if ( $comments ) {
 			 	array(
 					// 'walker'      => new consult_html_Comment(),
 			 		'avatar_size' => 70,
-		 		'style'       => 'div',
+			 		'callback'    => 'consult_comments',
+		 		    'style'       => 'div',
 				)
 			 );
 

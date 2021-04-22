@@ -22,6 +22,8 @@ function consult_cs_js(){
   wp_enqueue_style('menu-css',get_template_directory_uri().'/assets/css/menu-css.css',array(),'1.0.0','all');
   wp_enqueue_style('main-css',get_template_directory_uri().'/assets/css/main.css',array(),'1.0.0','all');
   wp_enqueue_style('responsive-css',get_template_directory_uri().'/assets/css/responsive.css',array(),'1.0.0','all');
+  wp_enqueue_style( 'consult-comment-style',get_stylesheet_uri() );
+  if(is_singular()) wp_enqueue_script('comment-reply');
   
   
   
